@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1> {{ results[0].name +  results[1].name +  results[2].name}}  </h1> 
+  
+<table ng-controller="myCtrl" border="1">
+  <tr ng-repeat="x in results">
+      <td>{{x.name}}</td>
+      <td>{{x.Country}}</td>
+  </tr>
+</table>
+
+
+<!-- 
+<ng-pagination [position]="'left'" [pageSize]="3" [itemsCount]="data.length" [data]="data" (getPageData)="getPageData($event)"></ng-pagination>
+
+ -->
+
